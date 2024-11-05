@@ -114,7 +114,7 @@ function buatScheduleUI(data) {
 }
 
 function scheduleUI({kegiatan, waktu, hari, id}) {
-    return `<tr><td></td><td>${kegiatan}</td><td>${hari}, ${waktu} <img class="remove" src ="Bahan/closeSvg.svg"data-schedule="${id}"><img class="selesai" src="Bahan/nextSvg.svg"data-schedule="${id}"></td></tr>`;
+    return `<tr><td></td><td>${kegiatan}</td><td>${hari}, ${waktu} <img class="remove" src ="closeSvg.svg"data-schedule="${id}"><img class="selesai" src="nextSvg.svg"data-schedule="${id}"></td></tr>`;
 }
 
 
@@ -154,7 +154,7 @@ function buatAccomplishedUI(data) {
 }
 
 function accomplishedUI({kegiatan, waktu, hari, id}) {
-    return `<tr><td></td><td>${kegiatan}</td><td>${hari}, ${waktu} <img class="remove" src ="Bahan/closeSvg.svg"data-schedule="${id}"></td></tr>`;
+    return `<tr><td></td><td>${kegiatan}</td><td>${hari}, ${waktu} <img class="remove" src ="closeSvg.svg"data-schedule="${id}"></td></tr>`;
 }
 
 
