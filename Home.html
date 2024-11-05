@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Planners</title>
+    <link rel="stylesheet" href="GAYA!!!.css">
+    <link rel="icon logo" href="Bahan/logo pure.svg">
+</head>
+<body>
+    <header>
+        <nav>
+             <a href="Home.html" class="daily">
+                <img src="Bahan/Daily Planner logo.svg" alt="logo" title="Home" style="width: 250px; height: auto;">
+            </a>
+            <ul class="logo">
+                <li title="Home" class="content">
+                    <a href="Home.html" style="color:#86a8e3">Home</a>
+                </li>
+                <li title="Create" class="content">
+                    <a href="Create.html">Create</a>
+                </li>
+                <li title="Schedule" class="content">
+                    <a href="Schedule.html">Schedule</a>
+                </li>
+                <li title="Contact" class="content">
+                    <a id="bukakontak" style="cursor: pointer;">Contact</a>
+                </li>
+            </ul>
+            <div class="rank">
+                <a href="Account.html" style="width: 30px; margin-right: 10px;">
+                    <img src="Bahan/profile.svg" alt="Photo Account" class="pphome">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!------- buat akun-->
+        <div class="overlay">
+            <div class="form-container">
+                <h2>Register Account</h2>
+                <form id="registrationform">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit" id="daftarakun">Register Now</button>
+                </form>
+                <p id="message"></p>
+            </div>
+        </div>
+        <!--  Buat kontak   -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" id="tutupkontak">X</span>
+                <h2 style="margin-left: 50px;">Contact Form :</h2>
+                <form id="contactForm">
+                    <label for="name" style="color: black;margin-left: 50px;margin-bottom: 10px;">Name:</label>
+                    <input type="text" id="name" name="name" required class="kontakform">
+    
+                    <label for="email"style="color: black;margin-left: 50px;margin-bottom: 10px;">Email:</label>
+                    <input type="email" id="email" name="email" required class="kontakform">
+    
+                    <label for="message"style="color: black;margin-left: 50px;margin-bottom: 10px;">Message:</label>
+                    <textarea id="message" name="message" required class="kontakform"></textarea>
+    
+                    <button type="submit" class="kontakform" style="background-color: #86a8e3;">Kirim</button>
+                </form>
+            </div>
+        </div>
+    
+        <section  id="home">
+
+            <h2>Home</h2>
+            <p style="width: auto;">Tired of the piles of notes that are getting thicker and harder to organize? Experience a new, more efficient way with Daily Planners! Say goodbye to lost and messy notes. With Daily Planners, all your tasks are neatly organized in one place, easily accessible anytime and anywhere.
+            Let's organize your day to be more productive with Daily Planners! All your tasks are neatly organized!</p>
+            
+            <a href="Create.html">
+                <button style="background-color: #86a8e3;color: white;border-radius: 8px;width: 150px;height: 35px; border: none;"class="button">Get Started</button>
+            </a>
+        </section>
+
+        <section>
+            <h2>Features</h2>
+            <fieldset style="border: none;
+            display: flex;
+            flex-direction: row;align-items: center;height: 300px;">
+                <div class="kartufitur" onclick="location.href = 'Account.html'">
+                    <img src="Bahan/winner.svg" alt="" style="width: 70%; height:70% ;margin-left: 35px;">
+                    <h3>Grow Up Your Rank!!!</h3>
+                </div>
+                <div class="kartufitur" onclick="location.href = 'Create.html'">
+                    <img src="Bahan/hand.svg" alt="" style="width: 70%; height:70% ;margin-left: 35px;">
+                    <h3 style="font-size: 15px;">Won The Game To Get Your Task</h3>
+                </div>
+                <div class="kartufitur">
+                    <img src="Bahan/comingsoon.svg" alt="" style="width: 70%; height:70% ;margin-left: 35px;margin-top: 35px;">
+                    <h3></h3>
+                </div>
+            </fieldset>
+        </section>
+    </main>
+
+    <footer>
+        <img src="Bahan/Daily Planner logo.svg" alt="Logo footer"id="logofooter">
+
+            <div style="display: flex;flex-direction: column;margin-left: 50px;">
+                <h3>About</h3>
+                <p>Daily Planners is a website that can help organize your daily activities to be more organized and structured with features that are easy for you to use.</p>
+            </div>
+
+            <div style="margin-left: 50px;">
+                <h3>Instagram:</h3>
+                <ul>
+                    <a href="https://www.instagram.com/muftialwafi/" target="_blank">
+                        <li>@muftialwafi</li>
+                    </a>
+                    <a href="http://www.instagram.com/mozaheed_/"target="_blank">
+                        <li>@mozaheed_</li>
+                    </a>
+                    <a href="https://www.instagram.com/rafihilmiiii/"target="_blank">
+                        <li>@rafihilmiiii</li>
+                    </a>
+                </ul>
+            </div>
+    </footer>
+    <script src="JS/rank.js"></script>
+    <script src="JS/Buat Home.js"></script>
+    <script src="JS/Buat contact!.js"></script>
+</body>
+</html>

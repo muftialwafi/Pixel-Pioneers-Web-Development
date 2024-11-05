@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Planners</title>
+    <link rel="stylesheet" href="GAYA!!!.css">
+    <link rel="icon logo" href="Bahan/logo pure.svg">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Home.html" class="daily">
+                <img src="Bahan/Daily Planner logo.svg" alt="logo" title="Home" style="width: 250px; height: auto;">
+            </a>
+            <ul class="logo">
+                <li title="Home" class="content">
+                    <a href="Home.html">Home</a>
+                </li>
+                <li title="Create" class="content">
+                    <a href="Create.html">Create</a>
+                </li>
+                <li title="Schedule" class="content">
+                    <a href="Schedule.html" style="color: #86a8e3;">Schedule</a>
+                </li>
+                <li title="Contact" class="content">
+                    <a id="bukakontak"style="cursor: pointer;">Contact</a>               
+                </li>
+            </ul>
+            <div class="rank">
+                <a href="Account.html" style="width: 30px; margin-right: 10px;">
+                    <img src="Bahan/profile.svg" alt="Photo Account" class="pphome">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+        <main>
+            <!--  Buat kontak   -->
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" id="tutupkontak">X</span>
+                    <h2 style="margin-left: 50px;">Contact Form :</h2>
+                    <form id="contactForm">
+                        <label for="name" style="color: black;margin-left: 50px;margin-bottom: 10px;">Name:</label>
+                        <input type="text" id="name" name="name" required class="kontakform">
+        
+                        <label for="email"style="color: black;margin-left: 50px;margin-bottom: 10px;">Email:</label>
+                        <input type="email" id="email" name="email" required class="kontakform">
+        
+                        <label for="message"style="color: black;margin-left: 50px;margin-bottom: 10px;">Message:</label>
+                        <textarea id="message" name="message" required class="kontakform"></textarea>
+        
+                        <button type="submit" class="kontakform" style="background-color: #86a8e3;">Kirim</button>
+                    </form>
+                </div>
+            </div>
+
+            <section id="schedule">
+                <form action="" method="post" autocomplete="off" style="display: none;">
+                    <label for="kegiatan">Kegiatan :</label>
+                    <input type="text" id="kegiatan" name="kegiatan" autofocus required class="form">
+                    <label for="waktu" class="waktu">Waktu :</label>
+                    <input type="date" id="waktu" name="waktu" required class="form">
+                    <button id="tambah">Tambah</button>
+                </form>
+
+            </div>
+        
+            <div class="container-rak">
+                <div id="rak" class="rak">
+                    <h2 id="schedule">Schedule :</h2>   
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>No</td>
+                                <td>Agenda</td>
+                                <td>Date</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="display: none;">
+                                <td>1</td>
+                                <td>Meeting with team</td>
+                                <td>2023-10-01</td>
+                                <td><button class="remove" data-schedule="1">Hapus</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+                <div id="rakSelesai" class="rak-selesai">
+                    <h2 id="selesai">Accomplished :</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>No</td>
+                                <td>Agenda</td>
+                                <td>Date</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="display: none;">
+                                <td>1</td>
+                                <td>Finish report</td>
+                                <td>2023-09-30</td>
+                                <td><button class="remove" data-schedule="1">Hapus</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+                <button id="clear">Hapus Semua</button>
+        </section>
+    </main>
+
+    <footer>
+        <img src="Bahan/Daily Planner logo.svg" alt="Logo footer"id="logofooter">
+
+        <div style="display: flex;flex-direction: column;margin-left: 50px;">
+            <h3>About</h3>
+            <p>Daily Planners is a website that can help organize your daily activities to be more organized and structured with features that are easy for you to use.</p>
+        </div>
+
+        <div style="margin-left: 50px;">
+            <h3>Instagram:</h3>
+            <ul>
+                <a href="https://www.instagram.com/muftialwafi/" target="_blank">
+                    <li>@muftialwafi</li>
+                </a>
+                <a href="http://www.instagram.com/mozaheed_/"target="_blank">
+                    <li>@mozaheed_</li>
+                </a>
+                <a href="https://www.instagram.com/rafihilmiiii/"target="_blank">
+                    <li>@rafihlimiiii</li>
+                </a>
+            </ul>
+        </div>
+    </footer>
+    <script src="JS/rank.js"></script>
+    <script src="JS/buat create.js"></script>
+    <script src="JS/Buat contact!.js"></script>
+</body>
+</html>
